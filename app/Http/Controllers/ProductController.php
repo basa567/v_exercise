@@ -12,20 +12,15 @@ class ProductController extends Controller
      * @return void
      */
 
-    private   $products;
-   public function __construct(){  
-
-    $this->products = (Array(Array('id'=>1,'name'=>'bag','price'=>45),
-                Array('id'=>2,'name'=>'hat','price'=>10),
-                Array('id'=>3,'name'=>'scarf','price'=>15),
-                Array('id'=>4,'name'=>'belt','price'=>20)));
+   
+   public function __construct(){
 
    }
 
     public static function getProduct()
     {   
         $products = (Array(Array('id'=>1,'name'=>'bag','price'=>45),
-        Array('id'=>2,'name'=>'hat','price'=>10),
+        Array('id'=>2,'name'=>'cap','price'=>10),
         Array('id'=>3,'name'=>'scarf','price'=>15),
         Array('id'=>4,'name'=>'belt','price'=>20)));    
         $tmp = Array(); 
@@ -39,7 +34,7 @@ class ProductController extends Controller
    public static function getProductById(){
      
       $products = (Array(Array('id'=>1,'name'=>'bag','price'=>45),
-      Array('id'=>2,'name'=>'hat','price'=>10),
+      Array('id'=>2,'name'=>'cap','price'=>10),
       Array('id'=>3,'name'=>'scarf','price'=>15),
       Array('id'=>4,'name'=>'belt','price'=>20)));
       foreach($products as $product){       

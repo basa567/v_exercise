@@ -223,7 +223,11 @@
                     <img src="img/<?php echo $productName?>.JPG" class="img-responsive productline" alt="slider"/>
                     <div class="productdetail"> 
                         <label id="productname<?php echo $productId; ?>"><?php echo ucfirst($productName); ?></label>
-                        <p id="productprice<?php echo $productId; ?>">€<?php echo $productPrice; ?></p>
+                        <?php if(productId==2){?>
+                            <p id="productprice<?php echo $productId; ?>"><strike>€110</strike>€<?php echo $productPrice; ?></p>
+                        <?php }else{ ?>
+                            <p id="productprice<?php echo $productId; ?>">€<?php echo $productPrice; ?></p>
+                        <?php }?>
                         <button class="btnaddcart" type="submit" onClick="cart(<?php echo $productId ?>)">Add to cart</button>
                     </div>
                  </div>              
@@ -261,14 +265,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    var count = 0;
-    
-    $("li>a.category,li>a.subcategory").click(function () {
-        $(this).nextAll('ul').stop().toggle('slow');    
-    });
-    $( ".toggleMenu" ).click(function() {
-        $( ".main-navigation" ).toggle();
-    }); 
+
+        var count = 0;    
+        $("li>a.category,li>a.subcategory").click(function () {
+            $(this).nextAll('ul').stop().toggle('slow');    
+        });
+        $( ".toggleMenu" ).click(function() {
+            $( ".main-navigation" ).toggle();
+        }); 
     
     function cart(id){
         let productName = document.getElementById("productname"+id).textContent;
@@ -321,7 +325,6 @@
             }
         })
         
-    }
-    
+    }    
     </script>
 </html>
