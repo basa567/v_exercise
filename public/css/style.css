@@ -219,6 +219,11 @@ ul:after {
     text-align: justify;     
     margin-left:5px;
   }
+
+.oldprice{
+    color:red;
+    padding-left:2px;
+  }
   
   @media only screen and (max-width:940px) {
     .cartDetail{
