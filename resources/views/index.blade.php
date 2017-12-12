@@ -224,7 +224,7 @@
                     <div class="productdetail"> 
                         <label id="productname<?php echo $productId; ?>"><?php echo ucfirst($productName); ?></label>
                         <?php if($productId==2){?>
-                            <p id="productprice<?php echo $productId; ?>"><strike>€110</strike>  €<?php echo $productPrice; ?></p>
+                            <strike>€110</strike><p id="productprice<?php echo $productId; ?>"> €<?php echo $productPrice; ?></p>
                         <?php }else{ ?>
                             <p id="productprice<?php echo $productId; ?>">€<?php echo $productPrice; ?></p>
                         <?php }?>
