@@ -289,7 +289,7 @@
             if(data==1){
             count++;
             var classname = "cartindividual";           
-             $(".addcart").append('<div class="cartlist"><img src="img/'+productName.toLowerCase();+'.JPG" alt="bag" width="50px" height="50px">'+ productName +'1x'+price+'  &#10006;</div>');
+             $(".addcart").append('<div class="cartlist"><img src="img/'+productName.toLowerCase()+'.JPG" alt="bag" width="50px" height="50px">'+ productName +'1x'+price+'  &#10006;</div>');
              if(count>1){
              let showtext = count +" items in your cart";
              $(".cartDetail").text(showtext);
