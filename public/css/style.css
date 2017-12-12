@@ -1,0 +1,721 @@
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+.header{
+    height:20px;
+    background-color:#3bc1c4;
+}
+
+img{   
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.favouriteTitle{
+  font-size:20px;
+  margin-top:-10px;
+}
+
+.menuimg{
+  width:0%;
+  height:0%;
+ visibility: hidden;
+}
+
+.addcart{   
+    padding:5px;  
+    margin:30px 0px 0px 0px; 
+    border-radius:2px;  
+    border:1px solid #b6c2c9;  
+    border-radius:5px;  
+    white-space:nowrap;
+}
+
+.cartlist{    
+  display:none; 
+  background-color:white; 
+}
+
+.addcart:hover{   
+  padding:5px;  
+  margin:30px 0px 0px 0px; 
+  border-radius:2px;  
+  border:1px solid #b6c2c9;  
+  border-radius:5px;  
+  white-space:nowrap;
+  position:absolute;
+  background-color:white;
+  z-index:10;
+}
+
+
+.addcart:hover .cartlist{  
+  display:block; 
+  color:black;   
+  cursor: pointer;   
+}
+
+
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;   
+  }
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;     
+  }
+ 
+ li ul {
+    display: none;
+  }
+
+li{
+    z-index:10;
+  }
+
+ul li a, .myaccount a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    font-weight: bold;
+  }
+
+ul li a:hover {
+    background: #3bc1c4;
+    color:white;
+    text-decoration:none;
+  }
+ 
+li:hover > ul {
+    display: block; 
+    position: absolute;
+  }
+ 
+li:hover li {
+      float: none;
+  }
+
+li:hover a , .myaccount a:hover{
+    background: #3bc1c4;
+    color:white;
+  }
+
+li:hover li a:hover {
+    background: white;
+    color:black;
+  }
+
+.main-navigation li ul li {
+    border-top: 0;
+  }
+  
+ul ul ul {
+    left: 100%;
+    top: 0; 
+  } 
+
+ul:before,
+ul:after {
+      content: " ";
+      display: table; 
+  }
+  
+ul:after {
+      clear: both;
+  }
+
+.sale{
+      color:red;
+  }
+  
+.BreakLine{
+    height:3px;
+    background-color:black; 
+  }
+
+.toggleMenu{
+    visibility: hidden;
+  }
+
+.favourite{
+    margin-top:30px;
+  }
+
+.productline{
+    border:1px solid #b6c2c9;
+    margin:15px 5px 5px 0px;
+    padding:10px;
+  }
+
+.productdetail{
+    text-align: center;    
+  }
+
+.btnaddcart{
+    background-color:#3bc1c4;
+    color:white;
+    border-radius:5px;
+    padding:7px;
+  }
+
+.btnsubscribe{
+    background-color:#3bc1c4;
+    color:white;
+    border-radius:5px;
+    padding:7px;
+    margin-top:10px;
+  }
+
+.slider{
+    margin-top:20px;
+  }
+
+.footer{
+    background-color:#b6c2c9;    
+    margin:30px 0px 0px 0px;
+    height:280px;
+  }
+  
+.footer li{
+    list-style: none;
+    color:white;
+    padding:5px;
+  }
+
+.footer li a{
+    color:white;
+    text-decoration:none;
+  }
+
+.subscribe{
+    padding:10px;
+  }
+
+.textemail{
+    padding:5px;
+    border-radius:5px;
+  }
+
+#userEmail{
+    width:200px;
+    border-radius:5px;
+  }
+
+.btnmenu{ 
+    visibility: hidden;
+  }
+
+.cartDetail{
+    font-weight: bold;
+    text-align: justify;     
+    margin-left:5px;
+  }
+  
+  @media only screen and (max-width:940px) {
+    .cartDetail{
+      font-weight: bold;
+      text-align: justify;     
+      margin-left:10px;
+      font-size:12px;
+    }
+
+  }
+  
+
+  @media only screen and (max-width:768px) {
+
+   .main-navigation{
+     display:none;
+   }
+  .toggleMenu{
+      visibility: visible;
+    }  
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+ .header{
+     height:20px;
+     background-color:#3bc1c4;
+ }
+ .logo{
+   width:65%;
+   float:left;
+   margin:30px 0px 0px 0px;
+ }
+ .favouriteTitle{
+   text-align: center;
+ }
+
+ img{   
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none; 
+   }
+ 
+ 
+ .favouriteTitle{
+   font-size:20px;
+   margin-top:-10px;
+ }
+
+ .slider{
+   width:100%;
+ }  
+ 
+ .btnmenu{
+  float:right;
+  position:relative;
+  top:-45px;
+  background-color:#b6c2c9;  
+  border-radius: 5px;
+  margin-left:5px;
+  visibility: visible;
+}
+
+ .menuimg{
+   width:36px;
+   height:36px;
+   position: relative;
+   top:-28px;
+   left:-40px;
+   visibility: visible;  
+ }
+
+ 
+
+ .icon-menu{
+  width:15px;
+  height:5px;
+  background-color: black;
+  margin:6px 0;
+  float:right;
+}
+
+.btnmenu{  
+  visibility: hidden; 
+}
+
+.cartDetail{
+  visibility: hidden;
+}
+ 
+.cartlist{    
+  display:none; 
+  background-color:white;
+  width:100%;
+}
+
+
+.addcart:hover .cartlist{  
+  display:block; 
+  color:black;   
+  cursor: pointer; 
+  width:100%;
+  background-color:white;
+}
+
+.addcart{    
+  padding:5px;  
+  margin:50px 0px 0px 30px;    
+  width:23%;
+  height:8%;
+  float:left; 
+  position:static;  
+  border:0px; 
+  background-color:white;   
+}
+
+.addcart:hover{    
+  padding:5px;  
+  margin:50px 0px 0px 30px;    
+  width:23%;
+  height:8%;
+  float:left; 
+  position:static;  
+  border:0px;     
+}
+.cart{
+font-size:40px;   
+padding:0px;
+border-radius:5px;
+margin-left:0px;
+}
+
+ ul {
+     list-style: none; 
+     padding: 0;
+     margin: 0;  
+     width:100%; 
+   }
+   ul li {
+     width:100%;
+     display: block;
+     position: relative;
+     float: left;     
+   }
+  
+   li ul {
+     display: none;
+   }
+   li{
+     z-index:10;
+   }
+   ul li a, .myaccount a {
+     display: block;
+     padding: 1em;
+     text-decoration: none;
+     white-space: nowrap;
+     color: black;
+     font-weight: bold;     
+   }
+   ul li a:hover {
+     background: #3bc1c4;
+     color:white;
+     text-decoration:none;
+   }
+  
+   li:hover > ul {
+     display: block; 
+     position: static;
+   }
+  
+   li:hover li {
+       float: none;
+   }
+   li:hover a , .myaccount a:hover{
+     background: #3bc1c4;
+     color:white;
+   }
+   li:hover li a:hover {
+     background: white;
+     color:black;
+   }
+   .main-navigation li ul li {
+     border-top: 0;
+   }
+   
+   ul ul ul {
+     left: 100%;
+     top: 0; 
+   }  
+   ul:before,
+   ul:after {
+       content: " "; 
+       display: table; 
+   }
+   
+   ul:after {
+       clear: both;
+   }
+ 
+   .sale{
+       color:red;
+   }
+   
+   .BreakLine{
+     height:3px;
+     background-color:black; 
+     visibility: hidden;
+   }
+ 
+   
+ 
+   .favourite{
+     margin-top:30px;
+   }
+ 
+   .productline{
+     border:1px solid #b6c2c9;
+     margin:15px 5px 5px 0px;
+     padding:10px;
+   }
+ 
+   .productdetail{
+     text-align: center;    
+   }
+ 
+   .btnaddcart{
+     background-color:#3bc1c4;
+     color:white;
+     border-radius:5px;
+     padding:7px;
+   }
+ 
+   .slider{
+     margin-top:20px;
+     position: relative;
+     z-index:-1;
+   }
+ 
+   .footer{
+     background-color:#b6c2c9;    
+     margin:30px 0px 0px 0px;
+     height:auto;     
+   }
+   
+   .footer li{
+     list-style: none;
+     color:white;
+     padding:5px;
+   }
+ 
+   .footer li a{
+     color:white;
+     text-decoration:none;
+   }
+ 
+   .subscribe{
+     padding:10px;
+   }
+ 
+   .textemail{
+     padding:5px;
+     border-radius:5px;
+   }
+ 
+   #userEmail{
+     width:200px;
+     border-radius:5px;
+   }
+
+  .btnsubscribe{
+    background-color:#3bc1c4;
+    color:white;
+    border-radius:5px;
+    padding:7px;
+  }
+ 
+  .productdetail{
+    font-size:18px;
+  }
+
+  .productlist{
+    width:50%;
+    float:left;
+  }
+
+  .toggleMenu{
+    visibility: visible;
+  }
+
+  .heading{
+    font-size:30px;
+    font-weight:bold;    
+  }
+  .subheading{
+    font-size:25px;
+    font-weight:bold;
+  }
+  .detail{
+    font-size:20px;
+    text-align: justify; 
+  }
+
+  
+  }
+  
+  @media only screen and (max-width: 320px){    
+    
+    .toggleMenu{
+      visibility: visible;
+    }
+    .logo{
+      width:50%;
+      margin-top:70px;
+    }
+
+    img{   
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      width:50%;    
+      margin:20px 0px 0px 0px;   
+      float:left   
+  }
+
+  .cart{
+    font-size:40px;
+    margin-left:20px;     
+  }
+ 
+  .icon-menu{
+   width:15px;
+   height:5px;
+   background-color: black;
+   margin:6px 0;
+   float:right;
+ }
+ .productline{
+   width:100%;
+ }
+  
+.cartlist{    
+  display:none; 
+  background-color:white;
+  width:100%;
+  height:auto;
+  margin-top:20px;
+  float:clear;
+}
+
+.addcart:hover .cartlist{  
+  display:block; 
+  color:black;   
+  cursor: pointer; 
+  width:100%;
+  height:auto;
+  background-color:white;
+  margin-top:20px;
+}
+
+.addcart:hover .cartlist img{
+  width:30px;
+  height:20px;
+  position:relative;
+  top:-20px;
+}
+
+.addcart{    
+  padding:5px;  
+  margin:50px 0px 0px 30px;    
+  width:10%;  
+  float:left;     
+  border:0px;   
+  top:-20px;
+}
+
+.addcart:hover{    
+  padding:5px;  
+  margin:50px 0px 0px 30px;    
+  width:10%;  
+  float:left;   
+  top:-20px;
+  border:0px;  
+  background-color:white;     
+}
+
+.slider{
+  width:100%;
+  margin:10px 0px 10px 0px;
+  position: relative;
+  z-index: -1;
+}
+
+.menuimg{
+  width:40px;
+  height:40px;
+  position:relative;
+  left:30px;
+  top:-19px; 
+}
+  
+.btnsubscribe{
+    background-color:#3bc1c4;
+    color:white;
+    border-radius:5px;
+    padding:7px;
+    width:100%;
+    margin:10px 0px 0px 0px;
+  }
+
+  #userEmail{
+     width:100%;
+     border-radius:5px;
+   }
+
+  .subscribe{
+     padding:0px;
+   }
+
+    .btnaddcart{
+      background-color:#3bc1c4;
+      color:white;
+      border-radius:5px;
+      padding:7px;
+      width:100%;
+    }
+
+    
+
+    .productdetail{
+      font-size:18px;
+    }
+
+    .productlist{
+      width:50%;
+      float:left;
+    }
+    .heading{     
+      font-size:25px;
+      font-weight:bold;    
+    }
+    .subheading{
+      font-size:20px;
+      font-weight:bold;
+    }
+    .detail{
+      font-size:18px;
+      text-align: justify; 
+    }
+    .favouriteTitle{
+      text-align: center;
+    }
+  }
+  
+
+   @media only screen and (max-width: 995px){
+    .favouriteTitle{
+      font-size:18px;
+      font-weight: bold;
+    }
+
+    img{   
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;     
+  }
+
+   
+    .footer{
+      text-align:center;
+    }
+
+    .heading{
+      font-size:20px;
+      font-weight:bold;
+    }
+    .subheading{
+      font-size:18px;
+      font-weight:bold;
+    }
+    .detail{
+      font-size:16px;
+      text-align: justify; 
+    }
+    .btnaddcart{
+      background-color:#3bc1c4;
+      color:white;
+      border-radius:5px; 
+      margin:5px 0px 0px 0px;        
+    }
+  } 
+
+ 
+
+ 
